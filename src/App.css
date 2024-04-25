@@ -1,0 +1,151 @@
+
+
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(225, 211, 211);
+}
+
+.weather {
+  width: 35rem;
+  max-width: 90%;
+  height: 28rem;
+  max-height: 90%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: space-around;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+}
+
+.weather_location,
+.weather_degrees {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.weather_description,
+.weather_description_head {
+  display: flex;
+  align-items: center;
+}
+
+.weather_icon {
+  /* font-size: 2rem; */
+  margin-right: .4rem;
+}
+
+.weather_description * h3 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin-right: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.weather_date {
+  font-size: 1rem;
+  font-weight: normal;
+  color: rgb(222, 211, 211);
+}
+
+.weather_country {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 1rem;
+}
+
+.weather_display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 1rem;
+  height: 17rem;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .weather {
+    width: 90%;
+    max-width: none;
+    height: auto;
+    max-height: none;
+    padding: 2rem;
+  }
+  
+  .weather_location,
+  .weather_degrees {
+    font-size: 1.8rem;
+  }
+
+  .weather_description  {
+    gap: 3rem;
+  }
+
+  .weather_description * h3 {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .weather_date {
+    font-size: 0.8rem;
+  }
+
+  
+}
+
+@media screen and (max-width: 480px) {
+  .weather {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    max-height: none;
+    padding: 1.5rem;
+  }
+
+  .weather_location,
+  .weather_degrees {
+    font-size: 1.6rem;
+  }
+
+  .weather_description {
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .weather_description * h3 {
+    font-size: 0.95rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .weather_country {
+    margin-left: 0rem;
+  }
+
+  .weather_date {
+    font-size: 0.7rem;
+  }
+
+  .input_icon {
+    margin-right: .5rem;
+  }
+}
+
+
+
+@media screen and (max-width: 380px) {
+  .weather {
+    margin-inline: .5rem;
+  }
+
+}
